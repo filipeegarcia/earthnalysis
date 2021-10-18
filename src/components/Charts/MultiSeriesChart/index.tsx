@@ -107,6 +107,21 @@ const MultiSeriesChart = ({
           xaxis: {
             categories: categories,
           },
+          fill: {
+            type: 'pattern',
+            pattern: {
+              style: [
+                'verticalLines',
+                'horizontalLines',
+                'squares',
+                'circles',
+                'slantedLines',
+              ],
+              width: 6,
+              height: 6,
+              strokeWidth: 2
+            }
+          },
         }}
         series={series}
         type={type}
