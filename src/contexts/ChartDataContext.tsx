@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 export interface ChartParameters {
-  chart: 'line' | 'area' | 'rangeBar' | 'pie' | 'bar' | 'boxPlot';
+  chart: 'line' | 'area' | 'rangeBar' | 'pie' | 'donut' | 'bar' | 'boxPlot';
   fields: string[];
 }
 
@@ -88,7 +88,7 @@ export const ChartDataContextProvider = ({ children }: ChartDataContextProps) =>
     const csvData = data.map(({ data }) => data);
     const head = csvData[0];
     setHeaders(head);
-    setCsvData(csvData.slice(1));
+    setCsvData(csvData.filter(arr => arr[0]).slice(1));
     onOpenModal();
   };
 

@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import Select from 'react-select'
 
 import pieChartImg from '../../assets/images/charts/pie.svg'
+import donutChartImg from '../../assets/images/charts/donut.png'
 import areaChartImg from '../../assets/images/charts/area.svg'
 import barChartImg from '../../assets/images/charts/bar.png'
 import lineChartImg from '../../assets/images/charts/line.svg'
@@ -111,6 +112,12 @@ export const ChartCreatorModal = ({
           chartType="pie"
           register={register}
           chartImgPath={pieChartImg}
+        />
+
+        <ChartOption
+          chartType="donut"
+          register={register}
+          chartImgPath={donutChartImg}
         />
 
         <ChartOption

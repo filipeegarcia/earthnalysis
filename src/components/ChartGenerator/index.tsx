@@ -69,8 +69,9 @@ function getComponent({ chart, fields }: ChartParameters) {
       );
 
     case 'pie':
+    case 'donut':
       return (
-        <SingleSeriesChart labelToGetData={fields[0]} key={key} type='pie' />
+        <SingleSeriesChart labelToGetData={fields[0]} key={key} type={chart} />
       );
 
     case 'boxPlot':
