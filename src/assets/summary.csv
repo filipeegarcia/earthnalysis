@@ -1,0 +1,4 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+Test Execution 1,61,808,703,2117,217.61,0%,128.305,187.23,0.15,149429.9
+Test Execution 2,61,767,698,965,47.60,0%,131.880,192.43,0.15,149413.8
+TOTAL,122,787,698,2117,158.85,0%,252.322,368.19,0.29,149421.8
