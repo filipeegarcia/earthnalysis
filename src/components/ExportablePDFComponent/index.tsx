@@ -22,7 +22,6 @@ const ExportablePDFComponent = ({ elementToPrintId }: ExportablePDFComponentProp
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
         pdf.addImage(imageData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save('download.pdf');
         pdf.save("download.pdf");
       })
       ;
