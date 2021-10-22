@@ -7,7 +7,7 @@ export const Header = () => {
     <Container>
       <Content>
         <img src={logoImg} alt="logo" />
-        <p>Earthanalysis</p>
+        <p>Earthnalysis</p>
       </Content>
     </Container>
   )
