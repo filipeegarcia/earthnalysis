@@ -100,29 +100,35 @@ const MultiSeriesChart = ({
       csvData.map(x => x[indexOfLabel]).filter(value => value);
   }
 
+  let options = type === 'line' ?  {
+    xaxis: {
+      categories: categories,
+    },
+  } :  {
+    xaxis: {
+      categories: categories,
+    },
+    fill: {
+      type: 'pattern',
+      pattern: {
+        style: [
+          'verticalLines',
+          'horizontalLines',
+          'squares',
+          'circles',
+          'slantedLines',
+        ],
+        width: 6,
+        height: 6,
+        strokeWidth: 2
+      }
+    },
+  };
+
   return (
     <Container>
       <Chart
-        options={{
-          xaxis: {
-            categories: categories,
-          },
-          fill: {
-            type: 'pattern',
-            pattern: {
-              style: [
-                'verticalLines',
-                'horizontalLines',
-                'squares',
-                'circles',
-                'slantedLines',
-              ],
-              width: 6,
-              height: 6,
-              strokeWidth: 2
-            }
-          },
-        }}
+        options={options}
         series={series}
         type={type}
         width="500"
