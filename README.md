@@ -9,4 +9,8 @@ Running the application is very simple, follow the instructions below:
 
 ## How to Use
 
-Using the application is very simple, just provide a valid csv as input, and from it generate the desired types of graphics.
+Using the application is very simple, just provide a valid csv as input, and generate the desired types of graphics.
+
+## Explanatory Video
+
+If you want to see how to use the tool in a more intuitive way, watch this [explanatory video](https://www.youtube.com/watch?v=1nPp9xq-xyU), with a demonstration of its use.
